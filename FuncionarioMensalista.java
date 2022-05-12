@@ -8,6 +8,7 @@ public class FuncionarioMensalista extends Funcionario{
         this.salario = salario;
     }
 
+
     public double getSalario() {
         return salario;
     };

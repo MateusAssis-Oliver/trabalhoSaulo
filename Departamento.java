@@ -55,6 +55,8 @@ public class Departamento {
                 System.out.println(((FuncionarioComissionado) i).salario());
             } else if (i instanceof FuncionarioHorista) {
                 System.out.println(valorHoraTrabalhada * ((FuncionarioHorista) i).getQuantHorasTrabalhadas());
+            } else if (i instanceof FuncionarioMensalista) {
+                System.out.println(((FuncionarioMensalista) i).getSalario());
             }
         }
 
