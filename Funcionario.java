@@ -3,9 +3,10 @@ public abstract class Funcionario {
     private String nome;
     private String cidade;
     private String estado;
-    private Departamento departamento;
+    protected Departamento departamento;
 
-
+    public abstract double getSalario();
+    
     public Departamento getDepartamento() {
         return departamento;
     }

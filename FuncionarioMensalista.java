@@ -1,16 +1,15 @@
 public class FuncionarioMensalista extends Funcionario{
 
-    public double salario;
+    private double salario;
 
-    public FuncionarioMensalista(Departamento dep , double salario) {
-    
+    public FuncionarioMensalista(Departamento dep) {
         setDepartamento(dep);
-        this.salario = salario;
     }
 
-
+    @Override
     public double getSalario() {
-        return salario;
-    };
+      
+        return this.salario;
+    }
 
 }

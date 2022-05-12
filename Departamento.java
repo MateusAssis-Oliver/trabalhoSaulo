@@ -2,15 +2,24 @@ import java.util.ArrayList;
 
 public class Departamento {
 
-    ArrayList<Funcionario> listFuncionario = new ArrayList<Funcionario>();
-
+    private ArrayList<Funcionario> listFuncionario;
     private String descricao;
     private double valorHoraTrabalhada;
+    private Empresa empresa;
 
-    public Departamento(String descricao, double valorHora) {
+    public Departamento(Empresa empresa , String descricao, double valorHora) {
 
+        this.empresa = empresa;
+        listFuncionario = new ArrayList<Funcionario>();
         this.descricao = descricao;
         this.valorHoraTrabalhada = valorHora;
+    }
+
+    public Empresa getEmpresa() {
+        return empresa;
+    }
+    public void setEmpresa(Empresa empresa) {
+        this.empresa = empresa;
     }
 
     public void addFuncioanrio(FuncionarioMensalista colaborador) {
@@ -35,11 +44,11 @@ public class Departamento {
         return descricao;
     }
 
-    public void setHoraTrabalhada(double horaTrabalhada) {
+    public void setvalorHoraTrabalhada(double horaTrabalhada) {
         this.valorHoraTrabalhada = horaTrabalhada;
     }
 
-    public double getHoraTrabalhada() {
+    public double getvalorHoraTrabalhada() {
         return valorHoraTrabalhada;
     }
 
@@ -52,7 +61,7 @@ public class Departamento {
         for (Funcionario i : listFuncionario) {
 
             if (i instanceof FuncionarioComissionado) {
-                System.out.println(((FuncionarioComissionado) i).salario());
+                System.out.println(((FuncionarioComissionado) i).getSalario());
             } else if (i instanceof FuncionarioHorista) {
                 System.out.println(valorHoraTrabalhada * ((FuncionarioHorista) i).getQuantHorasTrabalhadas());
             } else if (i instanceof FuncionarioMensalista) {

@@ -22,7 +22,10 @@ public class FuncionarioComissionado extends Funcionario{
         this.percentualComissao = percentualComissao;
     }
 
-    public double salario(){
+
+    @Override
+    public double getSalario() {
+        
         return ( getValorVendas() * getPercentualComissao() );
     }
     
