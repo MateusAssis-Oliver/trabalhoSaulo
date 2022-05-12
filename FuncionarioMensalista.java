@@ -1,8 +1,15 @@
 public class FuncionarioMensalista extends Funcionario{
 
-    public FuncionarioMensalista(Departamento dep) {
-        super(dep);
-        //TODO Auto-generated constructor stub
+    public double salario;
+
+    public FuncionarioMensalista(Departamento dep , double salario) {
+    
+        setDepartamento(dep);
+        this.salario = salario;
     }
+
+    public double getSalario() {
+        return salario;
+    };
 
 }

@@ -3,13 +3,8 @@ public abstract class Funcionario {
     private String nome;
     private String cidade;
     private String estado;
-    private double quantHorasTrabalhadas;
     private Departamento departamento;
-    
 
-    public Funcionario(Departamento dep) {
-        this.departamento = dep;
-    }
 
     public Departamento getDepartamento() {
         return departamento;
@@ -31,10 +26,6 @@ public abstract class Funcionario {
         return nome;
     }
 
-    public double getQuantHorasTrabalhadas() {
-        return quantHorasTrabalhadas;
-    }
-
     public void setCidade(String cidade) {
         this.cidade = cidade;
     }
@@ -45,10 +36,6 @@ public abstract class Funcionario {
 
     public void setNome(String nome) {
         this.nome = nome;
-    }
-
-    public void setQuantHorasTrabalhadas(double quantHorasTrabalhadas) {
-        this.quantHorasTrabalhadas = quantHorasTrabalhadas;
     }
 
    

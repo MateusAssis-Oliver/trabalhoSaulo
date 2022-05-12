@@ -1,8 +1,16 @@
 public class FuncionarioHorista extends Funcionario {
 
+    private double horasTrabalhadas;
     public FuncionarioHorista(Departamento dep) {
-        super(dep);
-        //TODO Auto-generated constructor stub
+     
+ 
+    }
+
+    public double getQuantHorasTrabalhadas() {
+        return horasTrabalhadas;
     }
     
+    public void setQuantHorasTrabalhadas(double horasTrabalhadas) {
+        this.horasTrabalhadas = horasTrabalhadas;
+    }
 }
