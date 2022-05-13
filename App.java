@@ -12,12 +12,6 @@ public class App extends Empresa {
 
     /* Cria o departamento x e adiciona na empresa passadas como referencia no contrutor */
     public void cadastraDepartamento(){
-
-        String nome = BoxDeTextoxInputs.msnInputSimplesStr("Digite o Nome Do Departamenoto");
-        int  valorHora = BoxDeTextoxInputs.msnInputSimplesNum("Digite o Valor Da hora TRabalhada");
-
-        Departamento dep = new Departamento(emp, nome, valorHora);
-        emp.addDepartamento(dep);
     }
 
 

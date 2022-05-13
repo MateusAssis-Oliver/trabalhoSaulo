@@ -5,6 +5,7 @@ public class Empresa {
     private ArrayList<Departamento> listDepartamento;
     App app;
     private String nome;
+    public Empresa nomeDep;
 
    
 

@@ -1,7 +1,8 @@
 public class Main{
     public static void main(String[] args) {
 
-        Empresa empresa01 = new Empresa();
+        JOptionPaneMultiInput.main(args);
+        /* Empresa empresa01 = new Empresa();
 
         while (true) {
             
@@ -43,7 +44,7 @@ public class Main{
             
         }
         
-
+ */
          /* 
         
         Empresa Ubametra = new Empresa();
